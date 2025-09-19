@@ -8,6 +8,10 @@ function Change() {
   return (
     <>
       <h1>Need a Passport? Here's what to do!</h1>
+      
+      <div className="walkthrough-link">
+        <p>📋 <a href="https://docs.google.com/document/d/1fJChW9EjYKIorDq2mtEj2GNmfdGDoBcHO4DErUGQQNw/edit?tab=t.0#heading=h.636p23r9m3xm" target="_blank" rel="noopener noreferrer">Detailed passport application walkthrough</a></p>
+      </div>
       <div className="change-cards-container">
         <div className="card card2">
           <div className="card-content">

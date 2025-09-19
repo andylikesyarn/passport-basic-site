@@ -3,6 +3,8 @@ import Home from "./Home";
 import New from "./pages/New";
 import Renew from "./pages/Renew";
 import Change from "./pages/Change";
+import Fees from "./pages/Fees";
+import Appointments from "./pages/Appointments";
 import gftoImage from "./assets/GTFO!.png";
 import "./App.css";
 
@@ -42,6 +44,12 @@ function App() {
                   </Link>
                 </div>
               </div>
+              <Link to="/fees" className="nav-link">
+                Fees
+              </Link>
+              <Link to="/appointments" className="nav-link">
+                Appointments
+              </Link>
             </div>
           </div>
         </nav>
@@ -53,6 +61,8 @@ function App() {
             <Route path="/new" element={<New />} />
             <Route path="/renew" element={<Renew />} />
             <Route path="/change" element={<Change />} />
+            <Route path="/fees" element={<Fees />} />
+            <Route path="/appointments" element={<Appointments />} />
           </Routes>
         </main>
       </div>
