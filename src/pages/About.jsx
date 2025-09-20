@@ -6,9 +6,6 @@ import andysFaceImage from "../assets/andys-face.png";
 function About() {
   return (
     <div className="about-page">
-      <div className="header-image">
-        <img src={gftoImage} alt="GFTO" className="gfto-logo" />
-      </div>
       <h1>About QTS Passport Guide</h1>
 
       <div className="change-cards-container">
@@ -50,6 +47,9 @@ function About() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="header-image">
+        <img src={gftoImage} alt="GFTO" className="gfto-logo" />
       </div>
     </div>
   );
