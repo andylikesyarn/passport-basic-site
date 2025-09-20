@@ -341,3 +341,12 @@ img[src*="GTFO"] {
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
 }
+
+.andys-face {
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.container-about {
+  display: flex;
+}
