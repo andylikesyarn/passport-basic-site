@@ -86,6 +86,9 @@ function App() {
               >
                 About
               </Link>
+              <button>
+                <a href="https://ko-fi.com/andystowersforest">Donate</a>
+              </button>
             </div>
 
             {/* Hamburger Menu Button */}
