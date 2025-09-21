@@ -8,9 +8,28 @@ function Change() {
   return (
     <>
       <h1>Need a Passport? Here's what to do!</h1>
-      
+
       <div className="walkthrough-link">
-        <p>📋 <a href="https://docs.google.com/document/d/1fJChW9EjYKIorDq2mtEj2GNmfdGDoBcHO4DErUGQQNw/edit?tab=t.0#heading=h.636p23r9m3xm" target="_blank" rel="noopener noreferrer">Detailed passport application walkthrough</a></p>
+        <p>
+          📋{" "}
+          <a
+            href="https://docs.google.com/document/d/1fJChW9EjYKIorDq2mtEj2GNmfdGDoBcHO4DErUGQQNw/edit?tab=t.0#heading=h.636p23r9m3xm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Detailed passport application walkthrough
+          </a>
+        </p>
+        <p>
+          📋{" "}
+          <a
+            href="https://docs.google.com/document/d/1BBO9E5pA5lFGO-oDSOKRcCvELDWGJQD6TJ2TE7G0WV0/edit?tab=t.0"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Notes from our 9/21 workshop
+          </a>
+        </p>
       </div>
       <div className="change-cards-container">
         <div className="card card2">
@@ -28,7 +47,7 @@ function Change() {
           </div>
           <div>
             Note that you CANNOT apply online if you are changing your name or
-            gender marker. 
+            gender marker.
           </div>
           <div className="card-arrow">↓</div>
         </div>

@@ -6,7 +6,7 @@ import andysFaceImage from "../assets/andys-face.png";
 function About() {
   return (
     <div className="about-page">
-      <h1>About QTS Passport Guide</h1>
+      <h1>About GTFO Passport Guide</h1>
 
       <div className="change-cards-container">
         <div className="card">
