@@ -5,9 +5,6 @@ import "../Home.css";
 function New() {
   return (
     <>
-      <div className="header-image">
-        <img src={gftoImage} alt="GFTO" className="gfto-logo" />
-      </div>
       <h1>Need a Passport? Here's what to do!</h1>
 
       <div className="walkthrough-link">
