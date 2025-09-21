@@ -124,9 +124,10 @@ function App() {
         <footer className="footer">
           <div className="footer-content">
             <p>
-              Created September 2025 by Andy Stowers Forest | donate to our work here:{" "}
+              Created September 2025 by Andy Stowers Forest | donate to our work
+              here:{" "}
               <a
-                href="https://buymeacoffee.com/stowersanda"
+                href="https://ko-fi.com/andystowersforest"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="donate-link"

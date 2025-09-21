@@ -36,7 +36,7 @@ function About() {
                   If you want to support to my work and make passports more
                   accessible to more people, you can donate on Venmo at
                   @qt-services on CashApp at $andysforest, or{" "}
-                  <a href="buymeacoffee.com/stowersanda">buy me a coffee</a>.
+                  <a href="https://ko-fi.com/andystowersforest">on Ko-Fi</a>.
                 </strong>
                 <br></br>
                 <br></br>
