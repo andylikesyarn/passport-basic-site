@@ -7,6 +7,7 @@ import Change from "./pages/Change";
 import Fees from "./pages/Fees";
 import Appointments from "./pages/Appointments";
 import About from "./pages/About";
+import GenderMarker from "./pages/GenderMarker";
 import gftoImage from "./assets/GTFO!.png";
 import "./App.css";
 
@@ -65,20 +66,35 @@ function App() {
                   </Link>
                 </div>
               </div>
-              <Link
-                to="/fees"
-                className="nav-link"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Fees
-              </Link>
-              <Link
-                to="/appointments"
-                className="nav-link"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Appointments
-              </Link>
+              <div className="dropdown">
+                <span className="dropdown-trigger">
+                  Additional
+                  <span className="dropdown-arrow">▼</span>
+                </span>
+                <div className="dropdown-content">
+                  <Link
+                    to="/fees"
+                    className="dropdown-link"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Fees
+                  </Link>
+                  <Link
+                    to="/appointments"
+                    className="dropdown-link"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Appointments
+                  </Link>
+                  <Link
+                    to="/gender-marker"
+                    className="dropdown-link"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Gender Marker Changes
+                  </Link>
+                </div>
+              </div>
               <Link
                 to="/about"
                 className="nav-link"
@@ -120,6 +136,7 @@ function App() {
             <Route path="/fees" element={<Fees />} />
             <Route path="/appointments" element={<Appointments />} />
             <Route path="/about" element={<About />} />
+            <Route path="/gender-marker" element={<GenderMarker />} />
           </Routes>
         </main>
 

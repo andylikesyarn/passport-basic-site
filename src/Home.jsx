@@ -45,9 +45,14 @@ function Home() {
               your name or gender marker
             </span>
             <div className="card-arrow">↓</div>
-            <Link to="/change" className="route-button">
-              Click here
-            </Link>
+            <div style={{display: 'flex', gap: '0.5rem', flexWrap: 'wrap', justifyContent: 'center'}}>
+              <Link to="/change" className="route-button">
+                General Changes
+              </Link>
+              <Link to="/gender-marker" className="route-button">
+                Gender Marker
+              </Link>
+            </div>
           </div>
         </div>
       </div>

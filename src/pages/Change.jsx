@@ -1,6 +1,7 @@
 import { useState } from "react";
 import gftoImage from "../assets/GTFO!.png";
 import "../Home.css";
+import { Link } from "react-router-dom";
 
 function Change() {
   const [count, setCount] = useState(0);
@@ -11,7 +12,7 @@ function Change() {
 
       <div className="walkthrough-link">
         <p>
-          📋{" "}
+          <br></br>📋 <br></br>
           <a
             href="https://docs.google.com/document/d/1fJChW9EjYKIorDq2mtEj2GNmfdGDoBcHO4DErUGQQNw/edit?tab=t.0#heading=h.636p23r9m3xm"
             target="_blank"
@@ -21,7 +22,7 @@ function Change() {
           </a>
         </p>
         <p>
-          📋{" "}
+          <br></br>📋 <br></br>
           <a
             href="https://docs.google.com/document/d/1BBO9E5pA5lFGO-oDSOKRcCvELDWGJQD6TJ2TE7G0WV0/edit?tab=t.0"
             target="_blank"
@@ -29,6 +30,13 @@ function Change() {
           >
             Notes from our 9/21 workshop
           </a>
+        </p>
+        <p>
+          {" "}
+          <br></br>📋 <br></br>
+          <Link to="/gender-marker">
+            Look at the gender marker change walkthrough here.
+          </Link>
         </p>
       </div>
       <div className="change-cards-container">
