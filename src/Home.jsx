@@ -77,6 +77,12 @@ function Home() {
             Notes from our 9/21 workshop
           </a>
         </p>
+        <p>
+          🗓️{" "}
+          <Link to="/workshops">
+            View upcoming workshops
+          </Link>
+        </p>
       </div>
     </>
   );

@@ -7,6 +7,7 @@ import Change from "./pages/Change";
 import Fees from "./pages/Fees";
 import Appointments from "./pages/Appointments";
 import About from "./pages/About";
+import Workshops from "./pages/Workshops";
 import GenderMarker from "./pages/GenderMarker";
 import gftoImage from "./assets/GTFO!.png";
 import "./App.css";
@@ -96,6 +97,13 @@ function App() {
                 </div>
               </div>
               <Link
+                to="/workshops"
+                className="nav-link"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Workshops
+              </Link>
+              <Link
                 to="/about"
                 className="nav-link"
                 onClick={() => setIsMenuOpen(false)}
@@ -135,6 +143,7 @@ function App() {
             <Route path="/change" element={<Change />} />
             <Route path="/fees" element={<Fees />} />
             <Route path="/appointments" element={<Appointments />} />
+            <Route path="/workshops" element={<Workshops />} />
             <Route path="/about" element={<About />} />
             <Route path="/gender-marker" element={<GenderMarker />} />
           </Routes>
