@@ -9,6 +9,7 @@ import Appointments from "./pages/Appointments";
 import About from "./pages/About";
 import Workshops from "./pages/Workshops";
 import GenderMarker from "./pages/GenderMarker";
+import Visa from "./pages/Visa";
 import gftoImage from "./assets/GTFO!.png";
 import "./App.css";
 
@@ -40,62 +41,68 @@ function App() {
               </Link>
               <div className="dropdown">
                 <span className="dropdown-trigger">
-                  Application Types
+                  Passports
                   <span className="dropdown-arrow">▼</span>
                 </span>
                 <div className="dropdown-content">
-                  <Link
-                    to="/new"
-                    className="dropdown-link"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    First-time Passport
-                  </Link>
-                  <Link
-                    to="/renew"
-                    className="dropdown-link"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Renew Passport
-                  </Link>
-                  <Link
-                    to="/change"
-                    className="dropdown-link"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Change/Correct Passport
-                  </Link>
+                  <div className="dropdown-section">
+                    <div className="dropdown-section-title">Application Types</div>
+                    <Link
+                      to="/new"
+                      className="dropdown-link"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      First-time Passport
+                    </Link>
+                    <Link
+                      to="/renew"
+                      className="dropdown-link"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Renew Passport
+                    </Link>
+                    <Link
+                      to="/change"
+                      className="dropdown-link"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Change/Correct Passport
+                    </Link>
+                  </div>
+                  <div className="dropdown-divider"></div>
+                  <div className="dropdown-section">
+                    <div className="dropdown-section-title">Additional</div>
+                    <Link
+                      to="/fees"
+                      className="dropdown-link"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Fees
+                    </Link>
+                    <Link
+                      to="/appointments"
+                      className="dropdown-link"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Appointments
+                    </Link>
+                    <Link
+                      to="/gender-marker"
+                      className="dropdown-link"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Gender Marker Changes
+                    </Link>
+                  </div>
                 </div>
               </div>
-              <div className="dropdown">
-                <span className="dropdown-trigger">
-                  Additional
-                  <span className="dropdown-arrow">▼</span>
-                </span>
-                <div className="dropdown-content">
-                  <Link
-                    to="/fees"
-                    className="dropdown-link"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Fees
-                  </Link>
-                  <Link
-                    to="/appointments"
-                    className="dropdown-link"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Appointments
-                  </Link>
-                  <Link
-                    to="/gender-marker"
-                    className="dropdown-link"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Gender Marker Changes
-                  </Link>
-                </div>
-              </div>
+              <Link
+                to="/visa"
+                className="nav-link"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Visa
+              </Link>
               <Link
                 to="/workshops"
                 className="nav-link"
@@ -146,6 +153,7 @@ function App() {
             <Route path="/workshops" element={<Workshops />} />
             <Route path="/about" element={<About />} />
             <Route path="/gender-marker" element={<GenderMarker />} />
+            <Route path="/visa" element={<Visa />} />
           </Routes>
         </main>
 

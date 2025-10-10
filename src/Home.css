@@ -229,6 +229,16 @@
     margin: 0.5rem 0;
     min-width: auto;
   }
+
+  .passport-section-header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .passport-section-header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 }
 
 .read-the-docs {
@@ -237,12 +247,69 @@
 
 .header-image {
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .gfto-logo {
   width: 50%;
   height: auto;
   border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Passport Section Header - Clickable/Expandable */
+.passport-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 800px;
+  background: linear-gradient(135deg, rgba(100, 108, 255, 0.1) 0%, rgba(100, 108, 255, 0.05) 100%);
+  border: 2px solid #646cff;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.passport-section-header:hover {
+  background: linear-gradient(135deg, rgba(100, 108, 255, 0.15) 0%, rgba(100, 108, 255, 0.08) 100%);
+  border-color: #535bf2;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(100, 108, 255, 0.2);
+}
+
+.passport-section-header:active {
+  transform: translateY(0);
+}
+
+.passport-section-header h1 {
+  margin: 0;
+  color: #034569;
+}
+
+.expand-icon {
+  color: #646cff;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.passport-section-header:hover .expand-icon {
+  transform: scale(1.1);
+}
+
+/* Visa Content Section */
+.visa-content {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.visa-content .card {
+  margin: 0;
 }
 
 .main-text {

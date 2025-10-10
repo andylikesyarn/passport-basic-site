@@ -163,6 +163,27 @@
   color: #646cff;
 }
 
+/* Dropdown Section Styles */
+.dropdown-section {
+  padding: 0.5rem 0;
+}
+
+.dropdown-section-title {
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  color: #034569;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background-color: rgba(3, 69, 105, 0.05);
+}
+
+.dropdown-divider {
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 0.5rem 0;
+}
+
 /* Hamburger Menu Styles */
 .hamburger-menu {
   display: none;
@@ -270,6 +291,19 @@
   .dropdown-link {
     padding: 0.75rem 3rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .dropdown-section {
+    padding: 0;
+  }
+
+  .dropdown-section-title {
+    padding: 0.75rem 2.5rem;
+    font-size: 0.85rem;
+  }
+
+  .dropdown-divider {
+    margin: 0.25rem 2rem;
   }
 
   .nav-left {
