@@ -28,7 +28,7 @@ function App() {
           <div className="nav-container">
             <div className="nav-left">
               <Link to="/" className="nav-logo">
-                GTFO Passport Guide
+                GTFO <span className="small-text">by QT Support Services</span>
               </Link>
             </div>
             <div className={`nav-menu ${isMenuOpen ? "nav-menu-open" : ""}`}>
